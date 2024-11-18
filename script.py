@@ -17,7 +17,7 @@ import gspread
 from time import sleep
 
 def authenticate_google_sheets():
-    credentials_file = './auto-reload-price-spreadsheet-3c8331fc8858.json'  # ファイルのパスを指定
+    credentials_file = './config/auto-reload-price-spreadsheet-3c8331fc8858.json'  # 正しいパスに変更
     scope = ["https://spreadsheets.google.com/feeds", "https://www.googleapis.com/auth/drive"]
     
     # サービスアカウントの認証
@@ -26,7 +26,6 @@ def authenticate_google_sheets():
     # 認証クライアントの生成
     client = gspread.authorize(creds)
     return client
-
 
 def fetch_prices():
     # Google Sheetsの認証
