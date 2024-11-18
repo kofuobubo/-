@@ -30,7 +30,7 @@ def authenticate_google_sheets():
 def fetch_prices():
     # Google Sheetsの認証
     client = authenticate_google_sheets()
-    sheet = client.open("無題のスプレッドシート").sheet1  # シート名を"PCパーツの価格"に変更
+    sheet = client.open("価格").sheet1  # シート名を"PCパーツの価格"に変更
 
     # データの取得（ヘッダーを考慮せずにすべてのデータを取得）
     data = sheet.get_all_values()  # ヘッダーを認識せずにすべてのデータを取得
