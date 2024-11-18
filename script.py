@@ -17,14 +17,7 @@ import gspread
 from time import sleep
 
 def authenticate_google_sheets():
-    # 環境変数から資格情報ファイルのパスを取得
-    credentials_file = os.getenv("GOOGLE_SHEETS_CREDENTIALS")
-    
-    # 資格情報ファイルが正しく指定されているかチェック
-    if not credentials_file:
-        raise ValueError("GOOGLE_SHEETS_CREDENTIALS environment variable is not set or the file path is invalid.")
-
-    # 認証スコープの設定
+    credentials_file = './auto-reload-price-spreadsheet-3c8331fc8858.json'  # ファイルのパスを指定
     scope = ["https://spreadsheets.google.com/feeds", "https://www.googleapis.com/auth/drive"]
     
     # サービスアカウントの認証
@@ -33,6 +26,7 @@ def authenticate_google_sheets():
     # 認証クライアントの生成
     client = gspread.authorize(creds)
     return client
+
 
 def fetch_prices():
     # Google Sheetsの認証
