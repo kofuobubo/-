@@ -49,15 +49,16 @@ def update_google_sheet(sheet, cell, value):
     worksheet.update_acell(cell, value)  # 特定のセルに値を更新
 
 # 価格を取得する関数
+# 価格を取得する関数
 def get_price_from_kakaku(url):
     try:
         # ページのHTMLを取得
         response = requests.get(url)
-        response.encoding = 'shift_jis'
-        html = response.text
+        response.encoding = 'shift_jis'  # 文字エンコーディングを指定
+        html = response.text  # HTMLの内容を取得
 
-        # 最安価格を抽出する正規表現
-        price_regex = r"最安価格\(税込\)：([0-9,]+)円"
+        # data-price属性から価格を抽出する正規表現
+        price_regex = r'data-price="([0-9,]+)"'
         match = re.search(price_regex, html)
 
         if match:
@@ -74,7 +75,7 @@ def fetch_prices():
     client = authenticate_google_sheets()
 
     # スプレッドシートのURLを指定して開く
-    sheet = client.open_by_url("https://docs.google.com/spreadsheets/d/1DdoKDEVasIM6Y8b5stWmchNmtJRGOKDZiYVxt94_ZBk/edit?gid=0#gid=0")  # スプレッドシートのURL
+    sheet = client.open_by_url("https://docs.google.com/spreadsheets/d/1bx8hShkTDt1cOGNtCNHCa4XJ0hCveS_Znbyb0n9iYrg/edit?hl=ja&gid=0#gid=0")  # スプレッドシートのURL
 
     # 価格ドットコムのURLリスト
     kakaku_urls = [
