@@ -26,4 +26,4 @@ jobs:
       - name: Run script
         run: python script.py
         env:
-          GOOGLE_SHEETS_CREDENTIALS: ./auto-reload-price-spreadsheet-3c8331fc8858.json  # 資格情報ファイルのパス
+          GOOGLE_SHEETS_CREDENTIALS: ./auto-reload-price-spreadsheet-ef4e8bb907ea.json  # 資格情報ファイルのパス
