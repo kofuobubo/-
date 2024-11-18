@@ -43,13 +43,6 @@ def fetch_prices():
     data = sheet.get_all_values()  # ヘッダーを認識せずにすべてのデータを取得
     print(data)
 
-if __name__ == "__main__":
-    fetch_prices()
-    
-
-
-# ... (残りのコードは同じままです)
-
 # Google Sheetsに書き込む関数
 def update_google_sheet(sheet, cell, value):
     worksheet = sheet.get_worksheet(0)  # 最初のシート
@@ -83,8 +76,6 @@ def fetch_prices():
     # スプレッドシートのURLを指定して開く
     sheet = client.open_by_url("https://docs.google.com/spreadsheets/d/1DdoKDEVasIM6Y8b5stWmchNmtJRGOKDZiYVxt94_ZBk/edit?gid=0#gid=0")  # スプレッドシートのURL
 
-    # E14を0に設定
-    update_google_sheet(sheet, 'E14', 0) # この行を追加
     # 価格ドットコムのURLリスト
     kakaku_urls = [
       "https://www.dospara.co.jp/SBR1299/IC479652.html",
@@ -93,7 +84,7 @@ def fetch_prices():
       "https://www.dospara.co.jp/SBR1297/IC466703.html",
       "https://www.dospara.co.jp/SBR448/IC490205.html",
       "https://www.dospara.co.jp/SBR1144/IC497399.html",
-      "https://www.dospara.co.jp/SBR83/IC510319.html",	
+      "https://www.dospara.co.jp/SBR83/IC510319.html",  
       "https://www.dospara.co.jp/SBR1017/IC482007.html"
     ]
 
@@ -103,9 +94,7 @@ def fetch_prices():
         print(f"取得した価格 (価格.com): {price}")  # 取得した価格を表示
 
         # E列またはR列に価格を設定
-        if index < 6:
-            cell_range = f'F{6 + index}'
-
+        cell_range = f'F{6 + index}'  # E列の6行目からスタートして6行ずつ増加
 
         # Google Sheetsに価格を更新
         update_google_sheet(sheet, cell_range, price)
