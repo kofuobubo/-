@@ -1,0 +1,29 @@
+name: Run Python script
+
+on:
+  schedule:
+    - cron: '0 9 * * *'  # 毎日9時に実行するスケジュール
+  workflow_dispatch:  # 手動で実行するためのトリガー
+
+jobs:
+  install_and_run:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.x'
+
+      - name: Install dependencies
+        run: |
+          pip install --upgrade pip
+          pip install gspread oauth2client requests
+
+      - name: Run script
+        run: python script.py
+        env:
+          GOOGLE_SHEETS_CREDENTIALS: ./config/auto-reload-price-spreadsheet-0787f51e0bcd.json  # 資格情報ファイルのパス
