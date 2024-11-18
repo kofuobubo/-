@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "auto-reload-price-spreadsheet",
+  "private_key_id": "ef4e8bb907eac3daf7ed932406a37deec25db3ce",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQCLU3KS3fM5DAHn\nwNO8dWfo7LVQ3OYosIBnmdY+sfy5A4yYAC6TQASLUn6Ue2yn5qkRl/A1rcvWllGH\nCfre+uInFEQcrIcAgzJKC1ZlHePT4HQg4C81CxoId17i4pSoKa2CLZw6h/uCWDiB\niN9N1gdEJXtrQxnektZjKl6xFREhFdRQJxHjG0bqC+JxDaOc8Dz5NqSAYw2mGfuk\n6RCFmLBwH5g1k0/n8KmRhlai33jd8WCoPBGt+U4YWchrzEi0pLaE25llRPvNEvIU\nmyUpPUKfz8DXBMwJ1kyad/PCJXVnXODUm9K5WLcKKCAwAgve7spxRkNPJEcVKmYN\nq7tqxhx/AgMBAAECggEAF1zbWghQyDCcwy1g8/ml/ndu4gvgplMOfRDdTa8P50BS\nm4xwQu3ZtTkUk7Zsnmz9zb7yHzYw959GNYQ1Zp2gPZhW4Y4Gp03YqXTkPFl6QiWh\no3+kOttNNr05kocXEWnHuAwI5gG2aYF8nDAE7erlVgaI/xAF7v4laASLU1tqf2cH\n0DZU2tu5+qf14JLLA6KV1Y2sZIMjjVJLe01QrR7dicMsSar0cVvlPbBmAikUJDbX\ngRXZBYLzK56D+eiUcqHmTQIqgVxgY2T1U0u5XHT3bERc3u1xeeSMljk65t38nuzb\nWCBx56f6PFRCHZkKaC0WkBvNcJXR+qPWN/ehV37XDQKBgQDC1OljiE5ucfW8/ml4\nmdS8SZW/Zx+ngQjHszYwJeLmEAmvLHEmBBCmeUi/YdjKMU+FTRImNt3A2maERM/z\nmcMBeOCdNCacuPy+ErUVU1hfC9vB9W+2eoONAcjmcBCFZbUMDjL9tYesHJwAHBEs\nlCwFVofkQqxeCYmwBsjJAXS6MwKBgQC3EWiWvaaEe1ll53kj4rOqhUQ0nJl76jRT\nHExeEzJkP0sCjxvZHoMh+1oBjyfHBbxifexcQEiZljLq4Ei+Rt25r0RpGF7Ylx/d\njcuhS/T9FJrC1OcPunEOPtndgWV95exnvkvOSr2m81AhYsF6gFbfre+dnyCfYz6S\nmY4ccbkghQKBgQC0KeSEWNiGQzWFhhGMJ1xUnQsvyrG32JeA65TxYyd1rWD3LvaW\nu+2Vs9P0vguVtZGeZ82frt7S5mMkbumJjyeHpfq3BDGsfVeigHQZe0/d3H5j1o1u\nRc5+Ryc7CGgOoyWPN1YpzILgQjhz1YCAI6itav4QsyLndpRvRWbIkWMahwKBgQCQ\nIl21aWZEopV1XTUMov4QQNK9lZpmbLR7xyj9XKHtOcQGJMSpQpO+Wpa36Y1I7mQv\nK7O/wkEm45H9SU8cuNDz1GHJWQ27++hz2KM9wH8ID4P16AhwYruGmseP1cQhxrhF\nyhcHOeNuId2yG333xDoh7GFfOZ1GwK3QYKP6EzPNvQKBgQCnCAmVg65unfXpsui0\nf9tp0czOIIbDj/FslSp3WvqztbD+uqdGBTqT1QqBjDchfYq1t9Oi2FaZxIvyTPy/\nnFSW/J48Zw/9RtNoaOJrnbw7F8seJIUmiLq4JyzKodGLtJ2sttbTXB+7zHnznJcf\nTkMfo/1msjtURla0B0Imnep9qw==\n-----END PRIVATE KEY-----\n",
+  "client_email": "id-681@auto-reload-price-spreadsheet.iam.gserviceaccount.com",
+  "client_id": "107565252950036918584",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/id-681%40auto-reload-price-spreadsheet.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
